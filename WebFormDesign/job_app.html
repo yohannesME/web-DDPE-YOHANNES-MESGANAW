@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>JOB APPLICATION</title>
+    </head>
+
+    <body>
+        <table align="center">
+            <tr>
+                <td width="300px">
+                    <h2>Web Form Design</h2>
+                </td>
+                <td width="1105px" align="right">
+                    <p>
+                        <a href="index.html">Home |</a>
+                        <a href="job_app.html">Job Application Form</a>| 
+                        <a href="feedback.html">Feedback Form</a>|
+                        <a href="reservation.html">Room Reservation and Pizza Delivery</a>|
+                        <a href="">About Us</a>|
+                        <a href="">Contact Us</a>
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <hr />
+        <h1>JOB APPLICATION</h1>
+        <p>
+            <form>
+                <label for="position">Position Applied for:</label><br>
+                <input id="position" type="text" name="pos" autofocus>
+                <br><br>
+                <label for="name">Name:</label><br>
+                <input id="name" type="text" name="name" >
+                <br><br>
+                <label for="nation">Nationality:</label><br>
+                <input id="nation" type="text" name="nation" >
+                <br><br>
+                <label for="dob">Date of Birth:</label><br>
+                <input id="dob" type="date" name="dob" >
+                <br><br>
+                <label for="addr">Address: </label><br>
+                <textarea id="addr"  rows="5%" cols="30%" placeholder="place your address in the text area"></textarea>
+                <br><br>
+                <label for="tele">Telephone:</label><br>
+                <input id="tele" type="tel" name="tele" required >
+                <br><br>
+                <label for="email">Email:</label><br>
+                <input id="email" type="email" name="email" required>
+                <br><br>
+                <label for="educhistory">Educational history and Qualification:</label><br>
+                <input id="educhistory" type="file" name="edu_and_qual" >
+                <br><br>
+                <label for="expr">Work Experiance:</label><br>
+                <input id="expr" type="text" name="expr" >
+                <br><br>
+                <label for="emp">Employeement:</label><br>
+                <input id="emp" type="text" name="emp" >
+                <br><br>
+                <label for="Experiance">Experiance:</label><br>
+                <!--
+                    we can implement using slider but with html only it will be inefficient
+
+                    <input id="Experiance" type="range" name="Experiance" min="0" value="0" max="10">
+                -->
+                
+                <select id="Experiance">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </select>
+                <br><br>
+
+                <label for="personal">Personal Statement: </label><br>
+                <textarea id="personal" rows="5%" cols="30%" placeholder="personal statement here..."></textarea>
+                <br><br>
+            </form>
+
+        </p>
+        <h2>REFEREE</h2>
+        <table width="100%">
+            <tr>
+                <td>
+                    <form>
+                        <fieldset>
+                            <legend>referee</legend>
+                            <label for="refname1">Name:</label>
+                            <input id="refname1" type="text" name="refname1" >
+                            <br><br>
+                            <label for="occ">Occupation:</label>
+                            <input id="occ" type="text" name="occ" >
+                            <br><br>
+                            <label for="rel">Relation:</label>
+                            <input id="rel" type="text" name="rel" >
+                            <br><br>
+                            <label for="refaddr">Address: </label><br>
+                            <textarea id="refaddr"  rows="5%" cols="30%" placeholder="place the address of your referee in the text area" ></textarea>
+                            <br><br>
+                            <label for="reftele">Telephone:</label>
+                            <input id="reftele" type="tel" name="reftele" required >
+                            <br><br>
+
+                        </fieldset>
+                    </form>
+                </td>
+                <td>
+                    <form>
+                        <fieldset>
+                            <legend>referee 2</legend>
+                            <label for="refname2">Name:</label>
+                            <input id="refname2" type="text" name="refname2" >
+                            <br><br>
+                            <label for="refocc2">Occupation:</label>
+                            <input id="refocc2" type="text" name="refocc2" >
+                            <br><br>
+                            <label for="rel2">Relation:</label>
+                            <input id="rel2" type="text" name="rel2" >
+                            <br><br>
+                            <label for="refaddr2">Address: </label><br>
+                            <textarea id="refaddr2"  rows="5%" cols="30%" placeholder="place the address of your second referee in the text area"></textarea>
+                            <br><br>
+                            <label for="reftele2">Telephone:</label>
+                            <input id="reftele2" type="tel" name="reftele2" required >
+                            <br><br>
+
+                        </fieldset>
+                    </form>
+                </td>
+            </tr>
+        </table>
+
+
+        <hr />
+        <table align="center">
+            <tr>
+                <td align="left" width="300px">
+                    <p>
+                        Follow Us On: <a href="">Facebook</a>|
+                        <a href="">Twitter</a>
+                    </p>
+                </td>
+                <td align="right" width="1105px">
+                    <a href="job_app.html">Job Application Form</a>|
+                     <a href="feedback.html">Feedback Form</a>|
+                    <a href="reservation.html">Room Reservation and Pizza Delivery</a>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2" align="center">
+                    Copyright &copy; AASTU SEng 2021, All Rights Reserved
+                </td>
+            </tr>
+        </table>
+
+
+    </body>
+
+
+
+</html>
