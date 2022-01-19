@@ -10,6 +10,7 @@
 	<title>LAB LIFE HACK</title>
 </head>
 <body>
+	<script>alert("to check the multimedia event play and pause the audio and it will automatically play the video.");</script>
 	
 	<table width="100%">	
 			<thead>
@@ -74,11 +75,11 @@
 							<p>
 								<h3>New Podcast</h3>
 								<b>	<big><big>Jack Ma - How I Overcame Failure</big></big></b><br>	
-								<audio src="resources\audio\Jack Ma - How I Overcame Failure.mp3" controls	></audio>
+								<audio src="resources\audio\Jack Ma - How I Overcame Failure.mp3" controls onpause="pauseAudio()"	></audio>
 								<hr>	
 
 								<h3> <b><big><big>24 Hours A Day</big></big></b></h3>
-								<video src="resources\video\24_HOURS.mp4" controls	width="100%" height="8%" poster="resources/images/cover.png"></video> 	
+								<video id="hours" src="resources\video\24_HOURS.mp4" controls	width="100%" height="8%" poster="resources/images/cover.png"></video> 	
 							</p>
 							
 				</td>
@@ -129,6 +130,13 @@
 		<tr><th id="bottom" colspan="4">Copyright &copy AASTU SENG. 2021, All Rights Reserved</th></tr>
 	</table>
 
-			
 </body>
+<script>
+
+ function pauseAudio(){
+	hours.play();
+}
+
+
+</script>
 </html>

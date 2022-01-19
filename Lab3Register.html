@@ -5,6 +5,37 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>REGISTER</title>
 </head>
+<script>
+	function myfocus(tg){
+		tg.style.background = "lightblue";
+	}
+
+	function colorpicked(){
+		alert("YOU PICKED A COLOR.");	
+	}
+
+	function checkpass(tg){
+		var value = tg.value;
+		 if(tg.value.length > 8){
+			 		
+		for(let i = 0; i<tg.value.length; i++){
+			if(!isNaN(Number(tg.value[i]))){
+				tg.style.background = "green";
+				alert("yes now you have digits too thats a good password.")
+				return 1;
+			}
+		}
+			tg.style.background = "yellow";
+			alert("good enough but can be better(no digit).")
+			
+		}
+		else{
+			tg.style.background = "red";
+			alert("the password is less than 8 characters")
+		} 
+	}
+
+</script>
 <body>
 	<table width="100%">	
 			<thead>
@@ -52,13 +83,13 @@
 					<p>
 						<form>
 							<label for="fullname">fullname</label><br>
-							<input type="text" id="fullname" size="50%" maxlength="50" required><br>
+							<input type="text" id="fullname" size="50%" maxlength="50" required onfocus="myfocus(this)"><br>
 							<label for="phone">Phone</label><br>
-							<input type="tel" id="phone" size="50%" required><br>
+							<input type="tel" id="phone" size="50%" onfocus="myfocus(this)" required><br>
 							<label for="age">Age</label><br>
-							<input type="number" id="age" size="20%" maxlength="100" minlength="18"><br>
+							<input type="number" id="age" size="20%" onfocus="myfocus(this)" maxlength="100" minlength="18"><br>
 							<label for="favcol">Your Favourite Color</label><br>
-							<input type="color" id="favcol"><br>
+							<input type="color" id="favcol" name="favcol" onblur="colorpicked()"><br>
 							<label for="bd">Birth Date</label><br>
 							<input type="date" id="bd"><br><br>
 							Gender: 
@@ -68,9 +99,9 @@
 							<label for="male">Male</label><br>
 
 							<label for="pass">Password</label><br>
-							<input type="password" id="pass" size="50%" maxlength="32" minlength="6" required><br>
+							<input type="password" id="pass" size="50%" maxlength="32" minlength="6" onblur="checkpass(this)" required><br>
 							<label for="pass">Comfirm Password: </label><br>
-							<input type="password" id="cpass" size="50%" maxlength="32" minlength="6" required><br><br>
+							<input type="password" id="cpass"  size="50%" maxlength="32" minlength="6" onblur="checkpass(this)" required><br><br>
 							Skills:
 							<ul>
 								<li>
@@ -163,4 +194,5 @@
 
 			
 </body>
+
 </html>
