@@ -1,30 +1,6 @@
-function myFunction() {
-  alert("The media was paused");
-}
-
-let functionPlay = () => {
-  alert("The media is Playing!");
-};
-
-//remove function
-
-const removeNode = function () {
-  const aud = document.getElementById("jack");
-  const parent = aud.parentNode;
-  parent.removeChild(aud);
-};
-// Add element functoin
-const addNode = function () {
-  const add = document.createElement("p");
-  add.innerText = "this is the add paragraph";
-  add.setAttribute("id", "addp");
-  const parent = document.getElementById("btnp");
-  parent.appendChild(add);
-};
-
 //swapping functions
 
-function doSwap(a, b) {
+function SwapElement(a, b) {
   swapElements(document.getElementById(a), document.getElementById(b));
 }
 
