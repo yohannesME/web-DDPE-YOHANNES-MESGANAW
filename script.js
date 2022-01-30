@@ -19,3 +19,23 @@ function swapElements(obj1, obj2) {
     }
   }
 }
+
+
+//remove function
+
+const removeAudio = function () {
+  const aud = document.getElementById("mp3");
+  const parent = aud.parentNode;
+  parent.removeChild(aud);
+}
+
+
+
+// Add element functoin
+const addElement = function () {
+  const add = document.createElement("p");
+  add.appendChild(document.createTextNode("this button you just clicked helped me add the element in the html."));
+  add.setAttribute("id", "addp");
+  const parent = document.getElementById("buttons");
+  parent.appendChild(add);
+}

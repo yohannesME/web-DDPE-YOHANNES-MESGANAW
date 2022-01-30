@@ -76,13 +76,18 @@
 							<p>
 								<h3>New Podcast</h3>
 								<b>	<big><big>Jack Ma - How I Overcame Failure</big></big></b><br>	
-								<audio src="resources\audio\Jack Ma - How I Overcame Failure.mp3" controls onpause="pauseAudio()"	></audio>
+								<audio id="mp3" src="resources\audio\Jack Ma - How I Overcame Failure.mp3" controls onpause="pauseAudio()"	></audio>
 								<hr>	
 
 								<h3> <b><big><big>24 Hours A Day</big></big></b></h3>
 								<video id="hours" src="resources\video\24_HOURS.mp4" controls	width="100%" height="8%" poster="resources/images/cover.png"></video> 	
 							</p>
-							<button id="swap" onclick="SwapElement('hours', 'liftImage')">SWAP</button>
+							<div id="buttons">
+								<button id="swap" onclick="SwapElement('hours', 'liftImage')">SWAP</button>
+								<button id="deleteAudio" onclick="removeAudio()">Remove Audio</button>
+								<button id="addPar" onclick="addElement()">Add Node</button>
+							</div>
+
 							
 				</td>
 				<td valign="top">	
